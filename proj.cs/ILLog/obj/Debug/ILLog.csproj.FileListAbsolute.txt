@@ -1,0 +1,10 @@
+D:\Repositories\ILLog\proj.cs\ILLog\bin\Debug\ILLog.dll
+D:\Repositories\ILLog\proj.cs\ILLog\bin\Debug\ILLog.pdb
+D:\Repositories\ILLog\proj.cs\ILLog\bin\Debug\Mono.Cecil.dll
+D:\Repositories\ILLog\proj.cs\ILLog\bin\Debug\Mono.Cecil.Mdb.dll
+D:\Repositories\ILLog\proj.cs\ILLog\bin\Debug\Mono.Cecil.Pdb.dll
+D:\Repositories\ILLog\proj.cs\ILLog\bin\Debug\Unity.CecilTools.dll
+D:\Repositories\ILLog\proj.cs\ILLog\bin\Debug\UnityEditor.dll
+D:\Repositories\ILLog\proj.cs\ILLog\bin\Debug\UnityEngine.dll
+D:\Repositories\ILLog\proj.cs\ILLog\obj\Debug\ILLog.dll
+D:\Repositories\ILLog\proj.cs\ILLog\obj\Debug\ILLog.pdb

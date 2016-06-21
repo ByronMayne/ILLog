@@ -1,0 +1,7 @@
+D:\Repositories\OIGC 2016\proj.cs\OIGC2016\bin\Release\OIGC2016.dll
+D:\Repositories\OIGC 2016\proj.cs\OIGC2016\bin\Release\OIGC2016.pdb
+D:\Repositories\OIGC 2016\proj.cs\OIGC2016\bin\Release\UnityEditor.dll
+D:\Repositories\OIGC 2016\proj.cs\OIGC2016\bin\Release\UnityEngine.dll
+D:\Repositories\OIGC 2016\proj.cs\OIGC2016\obj\Release\OIGC2016.dll
+D:\Repositories\OIGC 2016\proj.cs\OIGC2016\obj\Release\OIGC2016.pdb
+D:\Repositories\OIGC 2016\proj.cs\OIGC2016\obj\Release\OIGC2016.csprojResolveAssemblyReference.cache
