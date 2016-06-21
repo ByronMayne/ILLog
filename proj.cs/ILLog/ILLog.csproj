@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EC90258-C505-4E9A-A438-BFF293E75A6F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ILLog</RootNamespace>
+    <AssemblyName>ILLog</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Cecil">
+      <HintPath>lib\Mono Cecil\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>lib\Mono Cecil\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>lib\Mono Cecil\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Unity.CecilTools">
+      <HintPath>lib\Mono Cecil\Unity.CecilTools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\ILLogAttribute.cs" />
+    <Compile Include="Attributes\ILLogModifiedAttribute.cs" />
+    <Compile Include="MenuItems.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\AssemblyUtility.cs" />
+    <Compile Include="Utility\CecilUtility.cs" />
+    <Compile Include="Utility\TypeDefinitionExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MSBuild\ProcessBuildTargets.xml" />
+    <Content Include="MSBuild\BuildConfig.xml" />
+    <Content Include="MSBuild\Export\ExportDll.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MSBuild\Export\ExportSource.xml" />
+    <Content Include="MSBuild\Export\Export.xml" />
+    <Content Include="MSBuild\GenerateMonoSymbols.xml" />
+    <Content Include="MSBuild\ResolveUnityReference.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- The entry point for our custom build scripts -->
+  <Import Project="$(ProjectDir)\MSBuild\BuildConfig.xml" />
+</Project>
