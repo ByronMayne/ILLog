@@ -21,6 +21,6 @@ public class ExampleClass : MonoBehaviour
   public void Update()
   {
 
-    throw new System.Exception("FUCK");
+    throw new System.Exception("Nope");
   }
 }
